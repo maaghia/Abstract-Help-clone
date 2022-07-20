@@ -1,0 +1,188 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    color: white;
+    padding: 0 1rem;
+}
+.nav__link{
+    padding-left: 10px;
+    border-left: 2px solid white;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.abstract-logo {
+    width: 126px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header svg {
+    cursor: pointer;
+}
+header > div:first-child a:nth-child(2):hover{
+    text-decoration: underline
+}
+header > div:first-child a:nth-child(2){
+    transition: all .5s;
+}
+header > div:nth-child(2) svg:first-child:hover{
+    transform: scale(1.2);
+}
+header > div:nth-child(2) svg:first-child{
+    transition: all .5s;
+}
+.purple{
+    background-color: #DADBF1;
+    padding: 50px 0;
+    text-align: center;
+}
+.purple h3{
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.purple input{
+    width: 85%;
+    font-size: 20px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 9px 14px rgba(0, 0, 0, .1);
+    border: 1px solid black;
+    transition: all .5s linear;
+}
+.purple input:focus{
+    outline: none;
+    border: 1px solid #4C5FD5;
+}
+.search-bar{
+    position: relative;
+}
+.purple svg{
+    position: absolute;
+    right: 50px;
+    top: 14px;
+}
+.purple svg:hover{
+    fill: #4C5FD5;
+    transition: all .5s linear;
+}
+.cards{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 450px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+main a{
+    color: #4C5FD5;
+    position: relative;
+}
+main a svg{
+    position: absolute;
+    top: 5px;
+    padding-left: 5px;
+}
+main h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.cards > div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.cards img{
+    width: 73px;
+    height: 73px;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 30px;
+    text-align: left;
+    margin-top: 2rem;
+}
+footer h3{
+    margin-left: 40px;
+}
+footer li{
+    list-style: none;
+}
+#floating-button{
+    background-color: #4C5FD5;
+    border-radius: 25px;
+    justify-content: center;
+    padding: 13px 22px;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    color: white;
+    align-items: center;
+    border: none;
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+}
+@media screen and (min-width:500px) {
+    .purple h3{
+        font-size: 60px;
+    }
+}
+@media screen and (min-width:750px) {
+    .purple h3{
+        font-size: 80px;
+    }
+    .purple svg{
+        position: absolute;
+        right: 70px;
+        top: 14px;
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        max-width: 700px;
+    }   
+}
+@media screen and (min-width:1000px) {
+    .purple svg{
+        right: 100px;
+    }
+    .cards{
+        max-width: 900px;
+    }   
+    footer{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (min-width:1000px) {
+    .purple svg{
+        right: 140px;
+    }
+    .cards{
+        max-width: 1000px;
+    }   
+}
